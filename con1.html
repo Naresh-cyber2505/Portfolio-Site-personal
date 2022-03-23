@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="con1.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Contact Us - Naresh</title>
+</head>
+<body>
+    
+
+    <section id="footer1">
+        <div class="footer1 container">
+            <h2>FreeLanacing Available Drop a Message</h2>
+            <p>We will contact you Back</p>
+        </div>
+    </section>
+
+
+
+
+    <section1>
+        
+        <div class="container1">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class='bx bxs-edit-location bx-md'></i></span>
+                            <span>
+                                #44 9th Jayanagar <br>
+                                Bengalore, Karnataka <br>
+                                India <br>
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class='bx bxs-envelope bx-md' ></i></span>
+                            <span>nareshns252000@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><i class='bx bxs-phone bx-md' ></i></span>
+                            <span>+91 6361229215</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sci">
+                    <a href="https://www.instagram.com/ns_naresh_18_?r=nametag"><i class='bx bxl-instagram-alt bx-md' ></i>
+                    </a>
+                    <i class="bx bxl-facebook bx-md"></i>
+                    <i class="bx bxl-twitter bx-md"></i>
+                    <i class="bx bxl-linkedin bx-md"></i>
+                </div>
+            </div>
+            <div class="contactForm">
+                <a href="index.html"><i class='bx bxs-chevrons-left bx-fade-left bx-md' ></i></a>
+                <h2>Send a Message</h2>
+                <form onsubmit="sendEmail(); reset(); return false;">
+
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" id="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" id="phone" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea required></textarea>
+                            <span>Write your message or About Project</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                            <a href="index.html"><input type="submit" value="Back"></a>
+                            
+                        </div>
+                
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+    </section1>
+
+
+
+    
+
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><span>N</span>ar<span>e</span>sh N <span>S</span></h1></div>
+            <h2>Your Qustions And Solution</h2>
+            <p>Copyright @ 2020 Naresh. All rights reserved</p>
+        </div>
+    </section>
+
+    <!-- end Footer -->
+    <!-- <script src="./app.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "nareshns252000@gmail.com",
+            Password : "qwertyuiop@#$&_&12345",
+            To : 'nareshns138@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enq",
+            Body : "And this is the body3"
+        }).then(
+        message => alert(message)
+        );
+        }
+    </script>
+</body>
+</html>
